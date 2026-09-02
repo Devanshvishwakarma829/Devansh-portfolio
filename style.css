@@ -3447,3 +3447,100 @@ section[id] {
     box-shadow:
         0 0 18px rgba(112,255,183,.06);
 }
+
+ /* VISHWAKARMA KART PROJECT PREVIEW */
+
+.cart-preview {
+    padding: 0 !important;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 75% 30%, rgba(103, 220, 255, 0.10), transparent 35%),
+        rgba(3, 12, 17, 0.9);
+}
+
+.cart-preview-nav {
+    height: 24px;
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border-bottom: 1px solid rgba(103, 220, 255, 0.12);
+    color: #71909a;
+    font: 6px Orbitron, sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.cart-preview-nav strong {
+    margin-right: auto;
+    color: #9feeff;
+    font-size: 7px;
+}
+
+.cart-preview-hero {
+    height: calc(100% - 24px);
+    padding: 13px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cart-preview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cart-preview-text small {
+    color: #6b9aa7;
+    font: 5px Orbitron, sans-serif;
+    letter-spacing: 1px;
+}
+
+.cart-preview-text b {
+    color: #d9faff;
+    font: 800 13px/1.05 Orbitron, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.cart-preview-text span {
+    color: #6c8790;
+    font: 5px Inter, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.cart-preview-products {
+    width: 42%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.cart-preview-products span {
+    height: 48px;
+    border: 1px solid rgba(103, 220, 255, 0.16);
+    border-radius: 4px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(103, 220, 255, 0.12),
+            rgba(3, 12, 17, 0.8)
+        );
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-preview-products span::after {
+    content: "";
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: 7px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(120, 232, 255, 0.25);
+}
+
+.project-card:hover .cart-preview-products span {
+    border-color: rgba(103, 220, 255, 0.28);
+}
