@@ -3544,3 +3544,220 @@ section[id] {
 .project-card:hover .cart-preview-products span {
     border-color: rgba(103, 220, 255, 0.28);
 }
+
+/* =========================
+   MOBILE LAYOUT FIXES
+========================= */
+
+@media (max-width: 768px) {
+
+   /* ---------- PROFILE IMAGE ---------- */
+
+@media (max-width: 768px) {
+
+    .profile-wrap {
+        width: min(320px, 82vw);
+        height: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .profile-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+
+
+    /* ---------- PROJECT CARDS ---------- */
+
+    .projects-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-number {
+        top: 20px;
+        right: 20px;
+    }
+
+    .project-preview {
+        width: 100%;
+        height: 135px;
+        margin-top: 24px;
+        margin-bottom: 20px;
+        flex-shrink: 0;
+    }
+
+    .preview-window {
+        width: 88%;
+        max-width: 100%;
+    }
+
+    .project-content {
+        position: static;
+        margin-top: 0;
+    }
+
+    .project-content h3 {
+        max-width: 100%;
+        padding-right: 45px;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .project-content > p:not(.project-type) {
+        max-width: 100%;
+        line-height: 1.65;
+    }
+
+    .project-tech {
+        margin-top: 15px;
+    }
+
+    .project-actions {
+        width: 100%;
+        margin-top: 18px;
+        gap: 8px;
+    }
+
+    .project-btn,
+    .project-github {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+
+
+    /* ---------- VISHWAKARMA CART PREVIEW ---------- */
+
+    .cart-preview-nav {
+        gap: 5px;
+        padding: 0 7px;
+    }
+
+    .cart-preview-nav span {
+        font-size: 5px;
+    }
+
+    .cart-preview-nav strong {
+        font-size: 6px;
+    }
+
+    .cart-preview-hero {
+        padding: 10px;
+    }
+
+    .cart-preview-text b {
+        font-size: 11px;
+    }
+
+    .cart-preview-products {
+        width: 40%;
+        gap: 4px;
+    }
+
+    .cart-preview-products span {
+        height: 42px;
+    }
+
+
+    /* ---------- TRAINING / EXPERIENCE CARD ---------- */
+
+    .experience-card {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .experience-card > * {
+        min-width: 0;
+    }
+
+    .experience-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .experience-content h3 {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .experience-content p {
+        max-width: 100%;
+        line-height: 1.65;
+    }
+
+    .experience-status {
+        justify-self: start;
+        width: fit-content;
+        max-width: 100%;
+    }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 480px) {
+
+    .profile-wrap {
+        width: min(285px, 82vw);
+        height: 285px;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+
+    .project-number {
+        top: 18px;
+        right: 18px;
+        padding: 6px 8px;
+        font-size: 7px;
+    }
+
+    .project-preview {
+        height: 125px;
+        margin-top: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 17px;
+        padding-right: 35px;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .project-btn,
+    .project-github {
+        width: 100%;
+        flex: none;
+    }
+
+    .experience-card {
+        padding: 18px;
+    }
+
+    .experience-content h3 {
+        font-size: 17px;
+    }
+}
