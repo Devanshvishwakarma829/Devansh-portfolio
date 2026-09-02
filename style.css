@@ -3761,3 +3761,177 @@ section[id] {
         font-size: 17px;
     }
 }
+
+/* =========================
+   MOBILE TYPOGRAPHY + PROJECT CARD FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- BIG HEADINGS ---------- */
+
+    .section-title,
+    .section-heading,
+    h2 {
+        max-width: 100%;
+        font-size: clamp(28px, 8vw, 42px);
+        letter-spacing: -1.5px;
+        line-height: 1.15;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+        line-height: 1.05;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    /* ---------- PROJECT CARD ---------- */
+
+    .project-card {
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .project-content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-content h3 {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        margin: 10px 0 12px;
+        font-size: clamp(17px, 5vw, 21px);
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        overflow-wrap: break-word;
+    }
+
+    .project-content > p:not(.project-type) {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.65;
+        overflow-wrap: break-word;
+    }
+
+    /* ---------- TECH TAGS ---------- */
+
+    .project-tech {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 15px;
+    }
+
+    .project-tech span {
+        padding: 6px 8px;
+        font-size: 6.5px;
+        letter-spacing: 0.8px;
+        white-space: nowrap;
+    }
+
+    /* ---------- BUTTONS ---------- */
+
+    .project-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 18px;
+    }
+
+    .project-btn,
+    .project-github {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 11px 12px;
+        font-size: 7px;
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   SMALL PHONE TYPOGRAPHY
+========================= */
+
+@media (max-width: 480px) {
+
+    .section-title,
+    .section-heading,
+    h2 {
+        font-size: clamp(25px, 8vw, 34px);
+        letter-spacing: -1.2px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 13vw, 58px);
+        letter-spacing: -2.5px;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+
+    .project-content h3 {
+        font-size: 17px;
+        letter-spacing: -0.4px;
+    }
+
+    .project-content > p:not(.project-type) {
+        font-size: 11.5px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================
+   MOBILE LARGE FONT SPACING FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    /* All major large headings */
+    h1,
+    h2 {
+        letter-spacing: 0 !important;
+        word-spacing: 2px;
+        line-height: 1.15;
+    }
+
+    /* Hero main heading */
+    .hero h1 {
+        letter-spacing: -0.5px !important;
+        word-spacing: 3px;
+        line-height: 1.08;
+    }
+
+    /* Section headings */
+    .section h2 {
+        letter-spacing: 0 !important;
+        word-spacing: 2px;
+        line-height: 1.15;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        letter-spacing: 0 !important;
+        word-spacing: 1px;
+    }
+
+    .hero h1 {
+        letter-spacing: 0 !important;
+        word-spacing: 2px;
+    }
+}
